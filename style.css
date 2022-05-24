@@ -1,0 +1,934 @@
+@import url('//cdn.isamin.kr/Font/Pretendard/web/static/pretendard.css');
+*{
+    font-family:'Pretendard', 'sans-serif';
+    padding: 0;
+    margin: 0;
+    font-weight: 200;
+    font-size: 16px;
+}
+input, select, textarea{
+  appearance: none;
+}
+html, body, .main{
+  overflow:hidden;
+}
+input[type=button], input[type=number], input[type=text] { 
+  -webkit-appearance: none; 
+  -webkit-border-radius: 0;
+  border-radius: 10px;
+}
+input {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+div{
+  user-select: none;
+}
+*{
+  transition: all 300ms;
+  color: var(--color);
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--background);
+}
+input, select, textarea{
+  background-color: var(--background);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+input[type=button], input[type=submit], select, .pointer{
+  cursor: pointer;
+}
+@keyframes input-hov-in-1 {
+  from {} to {
+    box-shadow: var(--shadow) 0px 0px 0px 2px inset;
+  }
+}
+@keyframes input-hov-in-2 {
+  from {} to {
+    box-shadow: var(--dimigo) 0px 0px 0px 2px inset;
+  }
+}
+@keyframes input-hov-out {
+  from {
+    box-shadow: var(--shadow) 0px 0px 0px 2px inset;
+  } to {
+    box-shadow: var(--shadow) 0px 0px 0px 1px inset;
+  }
+}
+input{
+    margin-right: 5px;
+    margin-top: 10px;
+}
+.input-hov{
+  border: 0;
+  outline: none;
+  box-shadow: var(--shadow) 0px 0px 0px 1px inset;
+  animation: input-hov-out 0.25s;
+  animation-fill-mode: forwards;
+  width: 250px;
+  height: 30px;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 7px;
+}
+.input-hov:hover{
+  animation: input-hov-in-1 0.25s;
+  animation-fill-mode: forwards;
+}
+.input-hov:focus{
+  animation: input-hov-in-2 0.25s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes btnhoverOn {
+  from{
+    background: var(--dimigo);
+  } to {
+    background: var(--dimigo-d);
+  }
+}
+@keyframes btnhoverOff {
+  from{
+    background: var(--dimigo-d);
+  } to {
+    background: var(--dimigo);
+  }
+}
+.btn{
+  width: 282px;
+  height: 51px;
+  padding: 10px 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0;
+  outline: none;
+  animation: btnhoverOff 0.25s;
+  animation-fill-mode: forwards;
+  color: var(--background);
+}
+.btn:hover{
+  animation: btnhoverOn 0.25s;
+  animation-fill-mode: forwards;
+}
+.title{
+    text-decoration: none;
+    color: var(--dimigo);
+    font-size: 40px;
+    font-weight: 500;
+}
+.bd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-box{
+  width: 280px;
+  text-align: right;
+}
+.join{
+  text-decoration: none;
+  font-size: 15px;
+}
+.join_div{
+  margin-top: 10px;
+}
+.box{
+    width: 580px;
+}
+
+
+div{
+    display: inline-block;
+}
+
+.top{
+    background-color: var(--background);
+    height: 70px;
+    box-shadow: 0px 0px 10px 1px var(--shadow-2);
+    width: 100vw;
+    display: flex;
+}
+.bgc{
+    background-color: var(--background-1);
+}
+.dt{
+    color: var(--dimigo);
+    font-size: 22px;
+    margin-left: 60px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-weight: 600;
+}
+.info{
+    width: 100%;
+    margin-right: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.name{
+    font-weight: 600;
+    margin-right: 10px;
+}
+.divBox{
+  box-shadow: 0px 0px 10px 1px var(--shadow-2);
+  background-color: var(--background);
+  border-radius: 15px;
+}
+.timetable{
+  padding: 15px;
+  margin: 10px 0;
+}
+.time{
+  color: var(--dimigo);
+  font-size: 25px;
+}
+.ptable{
+  border: 1px;
+}
+.list_point{
+  box-shadow: 0px 0px 10px 1px var(--shadow-2);
+  background-color: var(--background);
+  border-radius: 15px;
+  padding: 15px;
+  margin: 10px 0;
+}
+.ptable{
+  width: 280px;
+  height: 465px;
+  text-align: center;
+}
+.ptable_t{
+  border: 0;
+}
+.ptable_th{
+  color: var(--dimigo);
+  font-size: 25px;
+  text-align: center;
+  width: 100%;
+  height: 45px;
+}
+.ptable_1{
+  background-color: var(--dimigo-y);
+}
+.ptable_3{
+  font-weight: 600;
+  color: var(--dimigo);
+}
+.ptable_dung{
+  width: 25px;
+}
+.ptable_name{
+  width: 50px;
+}
+.zasup{
+  width: 430px;
+  height: 215px;
+  padding: 15px;
+  margin: 10px 0;
+}
+.zasup_a{
+  color: var(--dimigo);
+  font-size: 25px;
+}
+
+.zasup_input{
+  width: 238px;
+}
+.it_text{
+  height: 30px;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 7px;
+  border: 0;
+  box-shadow: var(--shadow) 0px 0px 0px 1px inset;
+  outline: none;
+  animation: input-hov-out 0.25s;
+  animation-fill-mode: forwards;
+}
+.it_text:hover{
+  animation: input-hov-in-1 0.25s;
+  animation-fill-mode: forwards;
+}
+.it_text:focus{
+  animation: input-hov-in-2 0.25s;
+  animation-fill-mode: forwards;
+}
+.dmm_num{
+  width: 120px;
+  margin: 0;
+}
+.dmm_id{
+  width: 237px;
+}
+
+.zasup_select{
+  border: 0;
+  outline: none;
+  box-shadow: var(--shadow) 0px 0px 0px 1px inset;
+  animation: zasup_in_btnhoverOff 0.25s;
+  animation-fill-mode: forwards;
+  width: 150px;
+  height: 50px;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 7px;
+  color: var(--color);
+}
+.zasup_select:hover{
+  animation: zasup_in_btnhoverOn 0.25s;
+  animation-fill-mode: forwards;
+}
+.zasup_option{
+  background-color: var(--dimigo-y);
+}
+.zasup_in, .zasup_out{
+  width: 207px;
+  height: 51px;
+  padding: 10px 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0;
+  outline: none;
+  animation: zasup_in_btnhoverOff 0.25s;
+  animation-fill-mode: forwards;
+  color: var(--color);
+}
+.zasup_in:hover, .zasup_out:hover{
+  animation: zasup_in_btnhoverOn 0.25s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zasup_in_btnhoverOn {
+  from{
+    background: var(--dimigo-y);
+  } to {
+    background: var(--dimigo-y-z);
+  }
+}
+@keyframes zasup_in_btnhoverOff {
+  from{
+    background: var(--dimigo-y-z);
+  } to {
+    background: var(--dimigo-y);
+  }
+}
+.nowTime{
+  width: 430px;
+  height: 200px;
+  padding: 15px;
+  margin: 10px 0;
+}
+.now{
+  width: 100%;
+  text-align: center;
+}
+.nowT{
+  background: linear-gradient(to right, var(--dimigo) 30%, var(--dimigo-y) 30%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  --aps: rgb(176, 176, 176);
+}
+.nTime{
+  font-size: 45px;
+  font-weight: 700;
+}
+.leave{
+  color: var(--dimigo);
+  font-size: 20px;
+  margin: 10px 0px;
+}
+.next1{
+  width: 50%;
+  height: calc(100% - 100px);
+  display: flex;
+  justify-content: right;
+  align-items: end;
+}
+.next2{
+  width: 50%;
+  height: calc(100% - 100px);
+  display: flex;
+  justify-content: left;
+  align-items: end;
+}
+.nextBox{
+  text-align: right;
+}
+.nextBox2{
+  text-align: left;
+}
+.nextT{
+  font-size: 20px;
+}
+.nextTitle{
+  font-size: 30px;
+}
+.nt{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+  height: calc(100% - 100px);
+}
+.main{
+  width: 100%;
+  height: calc(100vh - 70px);
+}
+.mainPage{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.m_2{
+  margin: 0 20px;
+}
+.menu{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes in {
+  from {} to {
+    box-shadow: inset 0 -10px 0px -8px var(--dimigo);
+  }
+}
+@keyframes out {
+  from {
+    box-shadow: inset 0 -10px 0px -8px var(--dimigo);
+  } to {}
+}
+.menu-m{
+  width: 80px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--color);
+  animation: out 0.25s;
+  animation-fill-mode: forwards;
+}
+.menu-m:hover{
+  color: var(--dimigo);
+  font-weight: 600;
+  animation: in 0.25s;
+  animation-fill-mode: forwards;
+}
+.cps{
+  height: 30px;
+  width: 218px;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 7px;
+  border: 0;
+  box-shadow: var(--shadow) 0px 0px 0px 1px inset;
+  outline: none;
+  animation: input-hov-out 0.25s;
+  animation-fill-mode: forwards;
+}
+.cps:hover{
+  animation: input-hov-in-1 0.25s;
+  animation-fill-mode: forwards;
+}
+.cps:focus{
+  animation: input-hov-in-2 0.25s;
+  animation-fill-mode: forwards;
+}
+.c_button{
+  width: 505px;
+  height: 51px;
+  padding: 10px 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0;
+  outline: none;
+  animation: zasup_in_btnhoverOff 0.25s;
+  animation-fill-mode: forwards;
+  color: var(--color);
+}
+.c_button:hover{
+  animation: zasup_in_btnhoverOn 0.25s;
+  animation-fill-mode: forwards;
+}
+.cpoint{
+  padding: 15px;
+}
+.c_a{
+  color: var(--dimigo);
+  font-size: 30px;
+}
+.cbox_i{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.jari_name{
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid var(--dimigo-y);
+}
+.jari_point{
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.jari_s{
+  width: 170px;
+  height: 50px;
+  display: flex;
+  font-size: 15px;
+  border: 1px solid var(--dimigo);
+  margin: 10px;
+}
+.jari_name_n{
+  border-right: 1px solid rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0);
+}
+.jari_point_n{
+  color: rgba(0, 0, 0, 0);
+}
+.jari_s_n{
+  border: 2px solid rgba(0, 0, 0, 0);
+  margin: 10px;
+}
+.divBox_n{
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 15px;
+}
+.jari_div{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.jari_got{
+  width: 300px;
+  height: 50px;
+  border: 1px solid var(--dimigo);
+  margin: 10px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.panNum{
+  font-size: 25px;
+}
+.jaris22{
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.JM_div{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#myChart{
+  width: 500px;
+  height: 300px;
+}
+.JM_kg{
+  padding: 15px;
+}
+.JM_title{
+  font-size: 25px;
+  color: var(--dimigo);
+}
+.anum{
+  margin: 0;
+}
+.hj{
+  width: 530px;
+}
+.hj{
+  margin-top: 20px;
+  padding: 15px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.hj_hol, .hj_jak, .hj_hc{
+  width: 100px;
+  height: 51px;
+  padding: 10px 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0;
+  outline: none;
+  animation: zasup_in_btnhoverOff 0.25s;
+  animation-fill-mode: forwards;
+  color: var(--color);
+}
+.hj_hol:hover, .hj_jak:hover, .hj_hc:hover{
+  animation: zasup_in_btnhoverOn 0.25s;
+  animation-fill-mode: forwards;
+}
+.hj_number{
+  height: 30px;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 7px;
+  border: 0;
+  box-shadow: var(--shadow) 0px 0px 0px 1px inset;
+  outline: none;
+  animation: input-hov-out 0.25s;
+  animation-fill-mode: forwards;
+  width: 165px;
+}
+.hj_number:hover{
+  animation: input-hov-in-1 0.25s;
+  animation-fill-mode: forwards;
+}
+.hj_number:focus{
+  animation: input-hov-in-2 0.25s;
+  animation-fill-mode: forwards;
+}
+
+.anum{
+  height: 30px;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 7px;
+  border: 0;
+  box-shadow: var(--shadow) 0px 0px 0px 1px inset;
+  outline: none;
+  animation: input-hov-out 0.25s;
+  animation-fill-mode: forwards;
+  width: 165px;
+  margin: 10px 0;
+}
+.anum:hover{
+  animation: input-hov-in-1 0.25s;
+  animation-fill-mode: forwards;
+}
+.anum:focus{
+  animation: input-hov-in-2 0.25s;
+  animation-fill-mode: forwards;
+}
+.aotn, .aoeh{
+  width: 150px;
+  height: 51px;
+  padding: 10px 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0;
+  outline: none;
+  animation: zasup_in_btnhoverOff 0.25s;
+  animation-fill-mode: forwards;
+  color: var(--color);
+  margin: 0;
+}
+.aotn:hover, .aoeh:hover{
+  animation: zasup_in_btnhoverOn 0.25s;
+  animation-fill-mode: forwards;
+}
+
+.dobak_select_select{
+  border: 0;
+  outline: none;
+  box-shadow: var(--shadow) 0px 0px 0px 1px inset;
+  animation: zasup_in_btnhoverOff 0.25s;
+  animation-fill-mode: forwards;
+  width: 200px;
+  height: 50px;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 7px;
+  color: var(--color);
+}
+.dobak_select_select:hover{
+  animation: zasup_in_btnhoverOn 0.25s;
+  animation-fill-mode: forwards;
+}
+.dobak_option{
+  background-color: var(--dimigo-y);
+}
+
+.dobak_select_btn{
+  width: 100px;
+  height: 51px;
+  padding: 10px 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0;
+  outline: none;
+  animation: zasup_in_btnhoverOff 0.25s;
+  animation-fill-mode: forwards;
+  color: var(--color);
+  margin: 0;
+  margin-left: 5px;
+}
+.dobak_select_btn:hover{
+  animation: zasup_in_btnhoverOn 0.25s;
+  animation-fill-mode: forwards;
+}
+.dobak_select{
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dobak_select_title{
+  color: var(--dimigo);
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.gonji{
+  padding: 15px;
+  width: 340px;
+}
+.gonji_title{
+  color: var(--dimigo);
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.gonjiAdd{
+  padding: 15px;
+  margin-top: 10px;
+  width: 510px;
+}
+.gonjiAdd_title{
+  font-size: 25px;
+  color: var(--dimigo);
+}
+.gonjiAdd_btn{
+  width: 150px;
+  height: 51px;
+  padding: 10px 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0;
+  outline: none;
+  animation: zasup_in_btnhoverOff 0.25s;
+  animation-fill-mode: forwards;
+  color: var(--color);
+}
+.gonjiAdd_btn:hover{
+  animation: zasup_in_btnhoverOn 0.25s;
+  animation-fill-mode: forwards;
+}
+.gonjiAdd_context{
+  height: 30px;
+  width: 312px;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 7px;
+  border: 0;
+  box-shadow: var(--shadow) 0px 0px 0px 1px inset;
+  outline: none;
+  animation: input-hov-out 0.25s;
+  animation-fill-mode: forwards;
+}
+.gonjiAdd_context:hover, .ggamaerj:hover{
+  animation: input-hov-in-1 0.25s;
+  animation-fill-mode: forwards;
+}
+.gonjiAdd_context:focus, .ggamaerj:focus{
+  animation: input-hov-in-2 0.25s;
+  animation-fill-mode: forwards;
+}
+
+.ggamaerj{
+  height: 30px;
+  width: calc(100% - 35px);
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 7px;
+  border: 0;
+  box-shadow: var(--shadow) 0px 0px 0px 1px inset;
+  outline: none;
+  animation: input-hov-out 0.25s;
+  animation-fill-mode: forwards;
+}
+
+.singo_big{
+  padding: 15px;
+}
+.singo_title{
+  color: var(--dimigo);
+  font-size: 20px;
+}
+.singo_number{
+  width: 70px;
+}
+.singo_name{
+  width: 185px;
+}
+.singo_number, .singo_name{
+  height: 30px;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 7px;
+  border: 0;
+  box-shadow: var(--shadow) 0px 0px 0px 1px inset;
+  outline: none;
+  animation: input-hov-out 0.25s;
+  animation-fill-mode: forwards;
+  margin-left: 0;
+  margin-right: 0;
+}
+.singo_number:hover, .singo_name:hover{
+  animation: input-hov-in-1 0.25s;
+  animation-fill-mode: forwards;
+}
+.singo_number:focus, .singo_name:focus{
+  animation: input-hov-in-2 0.25s;
+  animation-fill-mode: forwards;
+}
+
+.singo_text{
+  min-height: 285px;
+  min-width: 300px;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 7px;
+  border: 0;
+  box-shadow: var(--shadow) 0px 0px 0px 1px inset;
+  outline: none;
+  animation: input-hov-out 0.25s;
+  animation-fill-mode: forwards;
+  margin-top: 5px;
+}
+.singo_text:hover{
+  animation: input-hov-in-1 0.25s;
+  animation-fill-mode: forwards;
+}
+.singo_text:focus{
+  animation: input-hov-in-2 0.25s;
+  animation-fill-mode: forwards;
+}
+
+.singo_btn{
+  width: 100%;
+  height: 51px;
+  padding: 10px 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0;
+  outline: none;
+  animation: zasup_in_btnhoverOff 0.25s;
+  animation-fill-mode: forwards;
+  color: var(--color);
+  margin-top: 5px;
+}
+.singo_btn:hover{
+  animation: zasup_in_btnhoverOn 0.25s;
+  animation-fill-mode: forwards;
+}
+.jabup{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.pangul{
+  width: 350px;
+  padding: 15px;
+}
+.pan_title{
+  font-size: 25px;
+  color: var(--dimigo);
+}
+.panNum{
+  color: var(--dimigo);
+}
+.panWho, .panSingo, .panContext{
+  margin-top: 5px;
+}
+.panPre, .panNex, .panPass{
+  -webkit-user-select:none; 
+  -moz-user-select:none; 
+  -ms-user-select:none; 
+  user-select:none
+}
+.deRNum{
+  background-color: var(--background);
+  width: 180px;
+  height: 40px;
+  border-radius: 5px;
+  margin: 4px;
+}
+.deRNum-i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:row; 
+  height: 100%;
+}
+.deRNum-n, .deRNum-q, .deRNum-p{
+  margin: 0 3px;
+}
+.deRNum-n{
+  color: var(--dimigo);
+  font-size: 16px;
+}
+.deRNum-q{
+  font-size: 20px;
+}
+.deRNum-p{
+  font-size: 16px;
+  color:rgb(143, 143, 143);
+}
+.deRNum-i-1, .deRNum-i-2, .deRNum-i-3{
+  border-radius: 5px;
+}
+.case{
+  height: calc(100vh - 70px);
+  width: 100vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.gonzi{
+  padding: 20px 20px 0 20px;
+  width: 100vw;
+}
+.gonji_all{
+  font-size: 15px;
+  margin-left: 3px;
+}
+.mode{
+  margin-right: 15px;
+}
