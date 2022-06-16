@@ -16,8 +16,8 @@
         <br>
         <div class="login-box">
           <form method="post" action="main">
-            <input type="text" name="id" class="id input-hov" placeholder="디미고인 아이디" autocomplete="off" >
-            <input type="password" name="pw" class="pw input-hov" placeholder="디미고인 비밀번호" autocomplete="off" >
+            <input type="text" name="id" class="id input-hov" placeholder="LOD 아이디" autocomplete="off" >
+            <input type="password" name="pw" class="pw input-hov" placeholder="LOD 비밀번호" autocomplete="off" >
             <input type="submit" class="btn" value="로그인">
           </form>
           <div class="join_div"><a href="/register" class="join">회원가입</a></div>
