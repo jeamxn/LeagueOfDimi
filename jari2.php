@@ -28,14 +28,17 @@
                      <div class="jari_point">0</div>
                  </div>
                  
-                 <div class="pointer jari_s divBox jari6">
+                 <div class="jari_s jari_s_n divBox_n">
+                     <div class="jari_name jari_name_n">　</div>
+                     <div class="jari_point jari_point_n">　</div>
+                 </div>
+             </div>
+             <div class="jari_bundan_2">
+             <div class="pointer jari_s divBox jari6">
                      <div class="jari_name">loading</div>
                      <div class="jari_point">0</div>
                  </div>
-                 
-             </div>
-             <div class="jari_bundan_2">
-             <div class="pointer jari_s divBox jari7">
+                 <div class="pointer jari_s divBox jari7">
                      <div class="jari_name">loading</div>
                      <div class="jari_point">0</div>
                  </div>
@@ -51,7 +54,14 @@
                      <div class="jari_name">loading</div>
                      <div class="jari_point">0</div>
                  </div>
-                 <div class="pointer jari_s divBox jari11">
+                 <div class="jari_s jari_s_n divBox_n">
+                     <div class="jari_name jari_name_n">　</div>
+                     <div class="jari_point jari_point_n">　</div>
+                 </div>
+                 
+             </div>
+             <div class="jari_bundan_3">
+             <div class="pointer jari_s divBox jari11">
                      <div class="jari_name">loading</div>
                      <div class="jari_point">0</div>
                  </div>
@@ -63,11 +73,7 @@
                      <div class="jari_name">loading</div>
                      <div class="jari_point">0</div>
                  </div>
-                 
-                 
-             </div>
-             <div class="jari_bundan_3">
-             <div class="pointer jari_s divBox jari14">
+                 <div class="pointer jari_s divBox jari14">
                      <div class="jari_name">loading</div>
                      <div class="jari_point">0</div>
                  </div>
@@ -79,7 +85,10 @@
                      <div class="jari_name">loading</div>
                      <div class="jari_point">0</div>
                  </div>
-                 <div class="pointer jari_s divBox jari17">
+                 
+             </div>
+             <div class="jari_bundan_4">
+             <div class="pointer jari_s divBox jari17">
                      <div class="jari_name">loading</div>
                      <div class="jari_point">0</div>
                  </div>
@@ -95,10 +104,7 @@
                      <div class="jari_name">loading</div>
                      <div class="jari_point">0</div>
                  </div>
-                 
-             </div>
-             <div class="jari_bundan_4">
-             <div class="pointer jari_s divBox jari21">
+                 <div class="pointer jari_s divBox jari21">
                      <div class="jari_name">loading</div>
                      <div class="jari_point">0</div>
                  </div>
@@ -106,7 +112,10 @@
                      <div class="jari_name">loading</div>
                      <div class="jari_point">0</div>
                  </div>
-                 <div class="pointer jari_s divBox jari23">
+                 
+             </div>
+             <div class="jari_bundan_5">
+             <div class="pointer jari_s divBox jari23">
                      <div class="jari_name">loading</div>
                      <div class="jari_point">0</div>
                  </div>
@@ -126,18 +135,18 @@
                      <div class="jari_name">loading</div>
                      <div class="jari_point">0</div>
                  </div>
-                 
-             </div>
-             <div class="jari_bundan_5">
-             <div class="jari_s jari_s_n divBox_n">
+                <div class="jari_s jari_s_n divBox_n">
                      <div class="jari_name jari_name_n">　</div>
                      <div class="jari_point jari_point_n">　</div>
                  </div>
+                 
+             </div>
+             <div class="jari_bundan_6">
              <div class="pointer jari_s divBox jari28">
                      <div class="jari_name">loading</div>
                      <div class="jari_point">0</div>
                  </div>
-             <div class="pointer jari_s divBox jari29">
+                 <div class="pointer jari_s divBox jari29">
                      <div class="jari_name">loading</div>
                      <div class="jari_point">0</div>
                  </div>
@@ -152,13 +161,11 @@
                  <div class="pointer jari_s divBox jari32">
                      <div class="jari_name">loading</div>
                      <div class="jari_point">0</div>
-                </div>
-                <div class="jari_s jari_s_n divBox_n">
+                 </div>
+                 <div class="jari_s jari_s_n divBox_n">
                      <div class="jari_name jari_name_n">　</div>
                      <div class="jari_point jari_point_n">　</div>
                  </div>
-                
-                 
              </div>
          </div>
    </div>
